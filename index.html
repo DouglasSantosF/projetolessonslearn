@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Projeto lessons leanerd</title>
 </head>
-<body>
-  <header id="cabecalho">
-    <section>
-      <h1 id="titulo">Meus conhecimentos adquiridos</h1>
-    </section>  
+<body class="container">
+  <header id="cabecalho" class="container">
+    <section class="sec-header">
+      <div id="div-title">
+        <h1 id="titulo">Meus conhecimentos adquiridos</h1>
+      </div>
+        
     
-    <nav class="navegacao">
       
-      <ul>
-        <li> Meu Portifólio     </li>    
-        <li> Lições que aprendi </li>
-        <li> Lições que irei aprender</li>
-     
-      </ul>
-    </nav>
+    </section>  
   
   </header>
 
+  <nav class="navegacao ">
+      
+    <ul class="ul-navegacao">
+      <li> <a href="#minha_foto"> Meu Portifólio   </a>  </li>    
+      <li> <a href="#licoes-a"> Lições na Trybe </a></li>
+      <li> <a href="#textos"> Lições que irei aprender </a></li>
+   
+    </ul>
+  </nav>  
+ 
   
-  
-  <section>
     
-    <img src="foto.jpeg" alt="minha foto" id="minha_foto" >
+   
 
-  </section>
 
-  <section id="port">
 
-    <a href="https://douglassantosf.github.io/" target="_blank" alt="link externo" rel="" id="portifolio"> Meu portifólio</a>
-    
-  </section>
   
-  <main>
-    <section>
-      <section>
+  <main class="container">
+    <img src="foto.jpeg" alt="minha foto" id="minha_foto" class="rounded" >
+    
+    <section id="port">
+
+      <a href="https://douglassantosf.github.io/" target="_blank" class="btn btn-outline-primary" alt="link externo" rel="" id="portifolio"> Meu portifólio</a>
+      
+    </section>
+      
         <section id="licoes-a">
           <h2>Lições aprendidas</h2>
-        </section>
+        
           <ol id="licoes_aprendidas">
               <li> Unix </li>
               <li> Git</li>
@@ -55,20 +60,20 @@
               <li> Slack </li>
               <li> HTML Semântico </li>
               <li> Soft Skills</li>
-              <li> Falar em grupo </li>
+              <li> JavaScript </li>
 
           </ol>
       </section>    
 
-      <section>
+      
         <section id="licoes-b">
           <h2>Lições que quero aprender</h2>
-        </section>
+        
 
           <ul id="licoes_a_aprender">
-              <li> JavaScript </li>
               <li> Menu retrátil</li>
               <li> React</li>
+              <li> Front-end </li>
               <li> Back-end </li>
               <li> SQL  </li>
               <li> Node     </li>
@@ -79,23 +84,24 @@
 
           </ul>
       </section>
-    </section>
+    
     <section class="conteiner">
-      <section class="lado-esquerdo">   
-        <article class="artigo">
-          <h2 class="title-art">Meu aprendizado na trybe até aqui</h2>
-            <p>
-              Estudando na <strong>Trybe</strong>, venho aprendendo muitas coisas. Primeiramente aprendi um pouco sobre a <strong>Trybe</strong>, como funcionam seus métodos de ensino, o que o aluno vai encontrar e aprender durante seu tempo estudando aqui. Depois nos ensinaram sobre Soft-skills. A primeira matéria foi sobre Unix, depois aprendemos sobre o git e o gitHub. Depois aprendemos sobre  a internet, depois veio o HTML e CSS, e agora estamos no JavaScript. Aprendendo nossas primeiras etapas para sermos bons desenvolvedores.</p>  
-        </article>
+      <div id="textos">
+        <section class="lado-esquerdo">   
+          <article class="artigo">
+            <h2 class="title-art">Meu aprendizado na trybe até aqui</h2>
+              <p>
+                Estudando na <strong>Trybe</strong>, venho aprendendo muitas coisas. Primeiramente aprendi um pouco sobre a <strong>Trybe</strong>, como funcionam seus métodos de ensino, o que o aluno vai encontrar e aprender durante seu tempo estudando aqui. Depois nos ensinaram sobre Soft-skills. A primeira matéria foi sobre Unix, depois aprendemos sobre o git e o gitHub. Depois aprendemos sobre  a internet, depois veio o HTML e CSS, e agora estamos no JavaScript. Aprendendo nossas primeiras etapas para sermos bons desenvolvedores.</p>  
+          </article>
 
-      </section>
-      <section class="lado-direito">
+        </section>
+        <section class="lado-direito">
 
-          <aside class="lateral">
-            <h2 class="title-art">Um pouco mais sobre a Trybe</h2>
-              Na Trybe, o ambiente é muito agradável, a equipe sempre se mostra pronta e acessível para nos ajudar, tanto pelo Slack, que é uma ótima plataforma, onde instrutores podem ajudar uns aos outros, quanto pelos plantões de dúvida.</aside>
-      </section>  
-            
+            <aside class="lateral">
+              <h2 class="title-art">Um pouco mais sobre a Trybe</h2>
+                Na Trybe, o ambiente é muito agradável, a equipe sempre se mostra pronta e acessível para nos ajudar, tanto pelo Slack, que é uma ótima plataforma, onde instrutores podem ajudar uns aos outros, quanto pelos plantões de dúvida.</aside>
+        </section>  
+      </div>        
     </section>
   </main>
   
@@ -118,7 +124,7 @@
 
   <section>
     <footer id="rodape">
-      site desenvolvido por Douglas dos Santos, 2021 - Trybe
+      site criado por Douglas dos Santos, 2021 - Trybe
     </footer>
   </section>
 
